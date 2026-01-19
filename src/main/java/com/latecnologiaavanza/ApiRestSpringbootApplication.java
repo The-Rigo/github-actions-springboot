@@ -14,6 +14,11 @@ public class ApiRestSpringbootApplication {
         return "Hola, suscribete a La Tecnologia Avanza";
     }
 
+    @GetMapping("/saludos")
+    public String saludarNuevo(){
+        return "Comparte este video en tu Linkedin!!!";
+    }
+
 	public static void main(String[] args) {
 		SpringApplication.run(ApiRestSpringbootApplication.class, args);
 	}
